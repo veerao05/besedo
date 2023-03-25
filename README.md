@@ -73,7 +73,7 @@ Following are the technologies used to build the framework.
 ## Getting Started
 Clone the repository
 
-git clone https://github.com/veerao05/besedo
+git clone https://github.com/veerao05/besedo.git
 
 **Setting up the workspace**
 
@@ -161,7 +161,7 @@ Here are some url samples for pagination (with/without filter):
 
 - [x] Add any suggestions
 
-See the [open issues](https://github.com/veenarao/TechnicalJava/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/veerao05/besedo/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,7 +187,7 @@ Don't forget to give the project a star! Thanks again!
 
 Your Name - VeenaRao and Email:veenaraofr@gmail.com
 
-Project Link: [https://github.com/veerao05/TechnicalJava.git](https://github.com/veerao05/TechnicalJava.git)
+Project Link: [https://github.com/veerao05/besedo](https://github.com/veerao05/besedo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
