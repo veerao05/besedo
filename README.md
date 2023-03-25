@@ -94,7 +94,7 @@ For building and running the application you need:
 ```
 cd <path_of_backend_repo>
 mvn clean install
-Ex: <MainPath>/Besedo/
+Ex: <MainPath>/besedo/
 ```
 
 ## Deploying the application 
@@ -105,11 +105,11 @@ Run BesedoMainApplication.java file
 2. Docker
 ```
 To Build the Docker image:  
-cd <MainPath>/Besedo/ 
+cd <MainPath>/besedo/ 
 docker build  --tag=besedo:latest . 
 
 To Run the springboot application in container: 
-docker run --name=besedo -it -e DATABASE_SERVER=jdbc:h2:mem:testdb -dp 8080:8080 -v ${PWD}/logs:/Besedo/logs besedo:latest
+docker run --name=besedo -it -e DATABASE_SERVER=jdbc:h2:mem:testdb -dp 8080:8080 -v ${PWD}/logs:/besedo/logs besedo:latest
 
 To see the container logs:
 docker logs -f --tail 10 besedo
