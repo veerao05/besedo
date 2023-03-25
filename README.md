@@ -208,6 +208,6 @@ List of resources used for project reference.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [issues-url]: https://github.com/veerao05/Besedo/issues
 [spring.io]: https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white
-[Springio-url]: http://www.h2database.com/html/tutorial.html
+[Springio-url]: https://spring.io/projects/spring-boot
 [H2.console]: https://img.shields.io/badge/H2-00008B?style=for-the-badge&logo=H2&logoColor=white
 [H2-url]:  http://www.h2database.com/html/tutorial.html
