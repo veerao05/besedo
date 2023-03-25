@@ -24,10 +24,27 @@ public class DataServiceImpl implements DataService {
     @Autowired
     private DataRepository dataRepository;
 
+    /**
+     * Method to save the data
+     *
+     * @param data
+     */
     @Override
     public void save(Data data) {
         dataRepository.save(data);
     }
+
+    /**
+     * Method to retrieve the data
+     *
+     * @param id
+     * @param email
+     * @param title
+     * @param body
+     * @param pageable
+     * @param csv
+     * @return Map<String, Object>
+     */
 
     @Override
     public Map<String, Object> findDataList(String id, String email, String title, String body, Pageable pageable, boolean csv) {
@@ -42,6 +59,13 @@ public class DataServiceImpl implements DataService {
         return convertToDomainPageResult(pageResultData, csv);
     }
 
+    /**
+     * Method to retrieve page results
+     *
+     * @param pageResult
+     * @param csv
+     * @return Map<String, Object>
+     */
     private Map<String, Object> convertToDomainPageResult(final Page<Data> pageResult, boolean csv) {
         Map<String, Object> response = new HashMap<>();
         if (csv) {
@@ -58,18 +82,4 @@ public class DataServiceImpl implements DataService {
     }
 
 
- /*   public List<Data> find(String id, String email) {
-
-        Data data = Data.builder().id(id).email(email).build();
-        System.out.println(data);
-        return dataRepository.findAll(Example.of(data));
-    }
-
-
-    private ExampleMatcher dataMatcher() {
-        ExampleMatcher matcher = ExampleMatcher
-                .matchingAll()
-                .withMatcher("body", contains().ignoreCase());
-        return matcher;
-    }*/
 }

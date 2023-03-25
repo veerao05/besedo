@@ -26,6 +26,13 @@ public class DataController {
     @Autowired
     private DataService dataService;
 
+    /**
+     * Method to post the  data
+     *
+     * @param data
+     * @return ResponseEntity<Data>
+     */
+
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Data> addData(@Valid @RequestBody Data data) {
         try {
@@ -36,6 +43,19 @@ public class DataController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
+
+    /**
+     * Method to get data with pagination filter,size and csv reports
+     *
+     * @param id
+     * @param email
+     * @param title
+     * @param body
+     * @param page
+     * @param size
+     * @param csv
+     * @return ResponseEntity<Object>
+     */
 
     @GetMapping()
     public ResponseEntity<Object> getAllData(@RequestParam(required = false) String id,
@@ -55,18 +75,5 @@ public class DataController {
             return ResponseEntity.ok(data);
         }
     }
-
-    /*    @GetMapping(value = "/v1")
-    public ResponseEntity<Map<String, Object>> getAllData(@RequestParam(required = false) String id,
-                                                          @RequestParam(required = false) String email,
-                                                          @RequestParam(required = false) String title,
-                                                          @RequestParam(required = false) String body,
-                                                          @RequestParam(defaultValue = "0") int page,
-                                                          @RequestParam(defaultValue = "3") int size,
-                                                          @RequestParam(required = false) boolean csv) {
-
-        Pageable paging = PageRequest.of(page, size);
-        return ResponseEntity.ok(dataService.findDataList(id, email, title, body, paging, csv));
-    }*/
 
 }

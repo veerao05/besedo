@@ -14,11 +14,11 @@ import javax.validation.constraints.Size;
 @Getter
 @Setter
 @Entity
-@Table(uniqueConstraints={@UniqueConstraint(columnNames={"id"})},name = "DATA")
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"id"})}, name = "DATA")
 public class Data {
 
     @Id
-    @Column(name = "id" )
+    @Column(name = "id")
     @Size(min = 1, max = 100)
     private String id;
 

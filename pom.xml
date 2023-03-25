@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.besedo</groupId>
-	<artifactId>TechnicalJava</artifactId>
+	<artifactId>besedo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TechnicalJava</name>
+	<name>Besedo Java</name>
 	<description>Besedo Assignment</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -53,7 +53,6 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
@@ -106,19 +105,6 @@
 					<target>8</target>
 				</configuration>
 			</plugin>
-
-			<!--<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M8</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.surefire</groupId>
-						<artifactId>surefire-junit47</artifactId>
-						<version>3.0.0-M8</version>
-					</dependency>
-				</dependencies>
-			</plugin>-->
 		</plugins>
 	</build>
 </project>

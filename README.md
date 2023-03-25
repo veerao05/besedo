@@ -6,11 +6,11 @@
   <p align="center">
          Besedo Microservice Assignment
     <br />
-    <a href="https://github.com/veerao05/TechnicalJava/blob/master/Assignment.txt"><strong>Explore the Assignment »</strong></a>
+    <a href="https://github.com/veerao05/Besedo/blob/master/Assignment.txt"><strong>Explore the Assignment »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/veerao05/TechnicalJava/issues">Report Bug</a>
-    <a href="https://github.com/veerao05/TechnicalJava/issues">Request Feature</a>
+    <a href="https://github.com/veerao05/Besedo/issues">Report Bug</a>
+    <a href="https://github.com/veerao05/Besedo/issues">Request Feature</a>
   </p>
 </div>
 
@@ -94,22 +94,22 @@ For building and running the application you need:
 ```
 cd <path_of_backend_repo>
 mvn clean install
-Ex: <MainPath>/TechnicalJava/
+Ex: <MainPath>/Besedo/
 ```
 
 ## Deploying the application 
 1. Locally
 ```
-Run TechnicalJavaApplication.java file
+Run BesedoMainApplication.java file
 ```
 2. Docker
 ```
 To Build the Docker image:  
-cd <MainPath>/TechnicalJava/ 
+cd <MainPath>/Besedo/ 
 docker build  --tag=besedo:latest . 
 
 To Run the springboot application in container: 
-docker run --name=besedo -it -e DATABASE_SERVER=jdbc:h2:mem:testdb -dp 8080:8080 -v ${PWD}/TechnicalJava/logs besedo:latest
+docker run --name=besedo -it -e DATABASE_SERVER=jdbc:h2:mem:testdb -dp 8080:8080 -v ${PWD}/logs:/Besedo/logs besedo:latest
 
 To see the container logs:
 docker logs -f --tail 10 besedo
@@ -206,7 +206,7 @@ List of resources used for project reference.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[issues-url]: https://github.com/veerao05/TechnicalJava/issues
+[issues-url]: https://github.com/veerao05/Besedo/issues
 [spring.io]: https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white
 [Springio-url]: http://www.h2database.com/html/tutorial.html
 [H2.console]: https://img.shields.io/badge/H2-00008B?style=for-the-badge&logo=H2&logoColor=white
