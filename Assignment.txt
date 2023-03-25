@@ -1,0 +1,15 @@
+The assessment is to build a simple REST service with two endpoints:
+One endpoint to ingest an JSON object with the following format. Fields have length constraint on min/max, email is required and only one
+of title and body is required.
+{
+ “id”: “123", - min 1, max 100
+ “email”: “email@gmail.com”, - required
+ “title”: “example”, - max 300
+ “body”: “example” - max 10000
+}
+2. One endpoint to return this data, considering that the dataset will contain a large number of entries. Filtering should also be possible, by a
+single field, one of id, email, title or body.The only constraint is that the project should be written in Java.
+3. One endpoint that returns a CSV file that is a report on the ingested items, composed of two columns, the first one being the id of the item and
+the second one being the amount of vowels contained in the body.
+Feel free to use any libraries and/or frameworks you need!
+When you’re finished, add it to a temporary Git repo and share it with us!
