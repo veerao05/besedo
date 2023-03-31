@@ -185,6 +185,7 @@ Improvements given:
 15. countVowels(data.getBody()) - handle Null pointer exception in case of GetBody null.
 16. email is required and only one of title and body is required.  - Didnt understand the question properly here.
 17. Exception handling with different codes could have been done better to the clients.
+18. Handling duplicate records.
 
 
 <!-- CONTRIBUTING -->
