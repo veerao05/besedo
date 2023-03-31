@@ -169,7 +169,7 @@ Improvements given:
 1. Exceptions handling using spring
 2. Global exception handling
 3. CSV reader null pointer on getBody()
-4. Load on get mapping can be done  using indexing should be used.
+4. Load on get mapping can be done  using indexing/search DB should be used.
 5. Load on  Post mapping can be done through queues/Spring Batch
 6. if (data.charAt(i) == 'a' || data.charAt(i) == 'e' || data.charAt(i) == 'i'
                     || data.charAt(i) == 'o' || data.charAt(i) == 'u') {
