@@ -165,6 +165,26 @@ See the [open issues](https://github.com/veerao05/besedo/issues) for a full list
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+Improvements given:
+1. Exceptions handling using spring
+2. Global exception handling
+3. CSV reader null pointer on getBody()
+4. Load on get mapping can be done  using indexing should be used.
+5. Load on  Post mapping can be done through queues/Spring Batch
+6. if (data.charAt(i) == 'a' || data.charAt(i) == 'e' || data.charAt(i) == 'i'
+                    || data.charAt(i) == 'o' || data.charAt(i) == 'u') {
+                count++;
+            }. Use lamda  expression
+7. Dont try to throw exceptions from Helper class(Bottom class) . How do you handle the exceptions thrown from bottom class in Upper class.
+8. Why Query is used why not getbyId or getByEmail was used? It can be used , to provide pagination all in one method use query here. Alternative is HSQL/getbyId or getByEmail
+10. findDataList(String id, String email, String title, String body, Pageable pageable, boolean csv)  - could have used all the paramaters in one class object.
+11. Since @lombok.Data is used , controller could have used controller injection. so use @RequiredArgsConstructor 
+12. Unit test cases for Controller and service/business layer
+13. Entity is directly exposed . so use view object instead of exposing Entity.
+14. POST request didnt not return any response message.
+15. countVowels(data.getBody()) - handle Null pointer exception in case of GetBody null.
+16. email is required and only one of title and body is required.  - Didnt understand the question properly here.
+17. Exception handling with different codes could have been done better to the clients.
 
 
 <!-- CONTRIBUTING -->
